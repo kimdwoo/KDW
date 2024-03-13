@@ -7,7 +7,7 @@ vim readme.md
 esc->:w 저장
 :q 나가기
 config 
-
+안녕
 
 
 
