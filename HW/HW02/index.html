@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>화면 3개로 나누기</title>
+    <title>2주차 과제</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -33,7 +33,7 @@
     </div>
 
     <script>
-        let imageVisible = false;
+        let Visible = false;
         let Canvas = null;
         
         function drawCircle() {
@@ -56,7 +56,7 @@
             document.getElementById('image').style.display = 'none';
             document.getElementById('blank').style.display = 'none';
             Canvas.style.display = 'block'; 
-            imageVisible = false;
+            Visible = false;
         }
         
         function likegame() {
@@ -64,7 +64,7 @@
             const Message = document.getElementById('blank');
             
             document.getElementById('blank').style.display = 'none';
-            if (imageVisible) {
+            if (Visible) {
                 
                 Gameimage.style.display = 'none';
                 if (Canvas) {
@@ -78,7 +78,7 @@
                     Canvas.style.display = 'none'; 
                 }
             }
-            imageVisible = !imageVisible;
+            Visible = !Visible;
         }
     </script>
 </body>
