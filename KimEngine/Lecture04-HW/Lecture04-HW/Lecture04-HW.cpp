@@ -15,12 +15,13 @@ void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods
     }
 }
 
-// 전역 변수로 현재 마우스 상태를 추적
+//현재 마우스 상태를 추적
 bool leftButtonPressed = false;
 bool rightButtonPressed = false;
 
 void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods)
 {
+    
     if (button == GLFW_MOUSE_BUTTON_RIGHT)
     {
         if (action == GLFW_PRESS)
