@@ -20,7 +20,7 @@ public:
     ~MSList() {}
 
     int get_size() const { return _size; }
-    void push_back(T data); //푸쉬백 사용 없으면 오류뜸
+    void add(T data); //add 사용 없으면 오류뜸
     T& operator[](int index);
     void clear();
 
@@ -48,7 +48,7 @@ T& MSList<T>::operator[](int index)//oper사용
     // 해당 노드의 데이터 반환
     return current->data;
 }template <typename T>
-void MSList<T>::push_back(T data)
+void MSList<T>:: add (T data)
 {
     MSNode<T>* new_node = new MSNode<T>(data);
     if (!_head)

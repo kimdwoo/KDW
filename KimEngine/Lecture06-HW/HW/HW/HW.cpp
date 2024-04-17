@@ -36,7 +36,7 @@ int initialize()
 	MObject* temp[300];
 	for (int i = 0; i < 300; i++) {
 		temp[i] = new Star(); 
-		list.push_back(temp[i]);
+		list.add(temp[i]);
 		std::cout << "별의개수는!: " << list.get_size() << std::endl;
 		//눈이 너무 아파요
 	}

@@ -22,7 +22,7 @@ public:
     ~MSList() {}
 
     int get_size() const { return _size; }
-    void push_back(T data);
+    void add(T data);
     T& operator[](int index);
 
 
@@ -33,7 +33,7 @@ public:
 
 
 template <typename T>
-void MSList<T>::push_back(T data) //푸쉬백 선언
+void MSList<T>::add(T data) //add 선언
 {
     MSNode<T>* new_node = new MSNode<T>(data);
     if (!_head)
