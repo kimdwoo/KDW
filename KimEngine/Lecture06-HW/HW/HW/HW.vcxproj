@@ -133,7 +133,6 @@
     <ClCompile Include="HW.cpp" />
     <ClCompile Include="MObject.cpp" />
     <ClCompile Include="MSList.cpp" />
-    <ClCompile Include="star.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
