@@ -38,15 +38,16 @@ int initialize()
 	for (int i = 0; i < 300; i++) {
 		temp[i] = new Star(); 
 		list.add(temp[i]);
-		std::cout << "별의개수는!: " << list.get_size() << std::endl;
+		std::cout << "별생성!: " << list.get_size() << std::endl;
 	}
 	return 0;
 }
 
 int release()
 {
-	for (int i = 0; i < list.get_size(); ++i) {
+	for (int i = 0; i < list.get_size(); i++) {
 		delete list[i];
+		std::cout << "별삭제!: " << i+1 << std::endl;
 	}
 	list.clear();
 	return 0;

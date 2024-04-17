@@ -15,6 +15,7 @@ public:
 
     void render()
     {
+        
         glBegin(GL_POLYGON);
 
         glColor3f(red, green, blue);// ·£´ý »ö
