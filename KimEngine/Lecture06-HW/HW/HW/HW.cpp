@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Star.hpp"
 #include "MSList.h"
+#include "ObjectTest.h"
 
 float moveFactor = 0.0f;
 float scaleFactor = 1.0f;
@@ -61,16 +62,20 @@ int render()
 	glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
 	glClear(GL_COLOR_BUFFER_BIT);
 
+	
 	for (int i = 0; i < list.get_size(); ++i) {
 		MObject* obj = list[i];
 		obj->render();
+		
+		
 	}
 
 	return 0;
 }
 
-int main(void)
+int main()
 {
+	
 	if (!glfwInit())
 		return -1;
 

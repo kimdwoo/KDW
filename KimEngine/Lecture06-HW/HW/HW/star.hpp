@@ -20,7 +20,7 @@ public:
         glColor3f(red, green, blue);// ·£´ý »ö
 
         
-        glVertex2f((0.2f / scale)+ xPos,(0.1f / scale) + yPos);
+        glVertex2f((0.2f / scale) + xPos,(0.1f / scale) + yPos);
         glVertex2f(xPos + (0.8f/scale), yPos +(0.01f/scale));
         glVertex2f(xPos + (0.3f/scale), yPos +  (- 0.3f / scale));
         glVertex2f(xPos + (0.5f / scale), yPos + (-0.8f / scale));
@@ -42,5 +42,5 @@ private:
     float red;
     float green;
     float blue;
-    int scale = 15;
+    int scale = 20;
 };
