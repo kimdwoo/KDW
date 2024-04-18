@@ -3,8 +3,7 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include "Star.hpp"
-#include "MSList.h"
-#include "ObjectTest.h"
+#include "MSList.cpp"
 
 float moveFactor = 0.0f;
 float scaleFactor = 1.0f;
@@ -38,7 +37,8 @@ int initialize()
 	for (int i = 0; i < 300; i++) {
 		temp[i] = new Star(); 
 		list.add(temp[i]);
-		std::cout << "별생성!: " << list.get_size() << std::endl;
+		std::cout << "리스트생성!: " << list.get_size() << std::endl;
+		//실행시키면 리스트 생성
 	}
 	return 0;
 }
@@ -47,7 +47,8 @@ int release()
 {
 	for (int i = 0; i < list.get_size(); i++) {
 		delete list[i];
-		std::cout << "별삭제!: " << i+1 << std::endl;
+		std::cout << "리스트삭제!: " << i+1 << std::endl;
+		//끄면 리스트 삭제
 	}
 	list.clear();
 	return 0;
