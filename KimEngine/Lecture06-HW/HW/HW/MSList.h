@@ -20,7 +20,7 @@ public:
     ~MSList() {}
 
     int get_size() const { return _size; }
-    void add(T data); //add 사용 없으면 오류뜸
+    void add(T data);
     T& operator[](int index);
     void clear();
 
